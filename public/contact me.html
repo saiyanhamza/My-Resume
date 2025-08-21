@@ -4,16 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact - Engr. Hamza Rehman</title>
+    <meta name="description" content="Contact information for Engr. Hamza Rehman - Mechatronics Engineer">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
+    <style>
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .contact-item:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-item .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .contact-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .contact-item:hover h3 {
+            color: var(--white);
+        }
+        
+        .contact-item p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .map-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: var(--accent-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    
-    <h1>Contact Me</h1>
+    <div class="container">
+        <header class="header">
+            <h1>Contact Information</h1>
+            <p class="subtitle">Get in touch with Engr. Hamza Rehman</p>
+        </header>
 
-        <p>Name: Engr. Hamza Rehman</p>
-        <p>Phone: +92-318-9108310</p>
-        <p>Email: saiyanhamza857022@gmail.com</p>
-        <p>Address: I/8 Markaz, Islamabad</p>
+        <section class="section">
+            <h2>Contact Details</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">👤</span>
+                    <h3>Name</h3>
+                    <p>Engr. Hamza Rehman</p>
+                </div>
 
+                <div class="contact-item">
+                    <span class="icon">📱</span>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+923189108310" style="color: inherit; text-decoration: none;">+92-318-9108310</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">📧</span>
+                    <h3>Email</h3>
+                    <p><a href="mailto:saiyanhamza857022@gmail.com" style="color: inherit; text-decoration: none;">saiyanhamza857022@gmail.com</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <h3>Address</h3>
+                    <p>I/8 Markaz, Islamabad<br>Pakistan</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hamzarehman-saiyan/" target="_blank" rel="noopener">💼 LinkedIn Profile</a>
+                <a href="https://www.facebook.com/hamza.rehman.1485537?mibextid=ZbWKwL" target="_blank" rel="noopener">📘 Facebook Profile</a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="../index.html" class="back-link">← Back to Resume</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Professional Availability</h2>
+            <p style="text-align: center; font-size: 1.1em; line-height: 1.8;">
+                I am available for consulting, project collaboration, and full-time opportunities 
+                in Mechatronics Engineering, IoT development, and Embedded Systems. 
+                Feel free to reach out to discuss how we can work together on innovative technology solutions.
+            </p>
+        </section>
+
+        <footer class="footer">
+            <p>© 2024 Engr. Hamza Rehman. All Rights Reserved.</p>
+            <p>Mechatronics Engineer | IoT & Robotics Specialist</p>
+        </footer>
+    </div>
 </body>
 </html>
